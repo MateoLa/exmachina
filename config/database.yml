@@ -1,0 +1,33 @@
+# PostgreSQL. Versions 9.3 and up are supported.
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+  database: exmachina_development
+  username: <%= ENV.fetch('DB_USERNAME') %>
+  password: <%= ENV.fetch('DB_PASSWORD') %>
+  host: <%= ENV.fetch('DB_HOST', 'localhost') %>
+
+test:
+  <<: *default
+  database: exmachina_test
+  username: <%= ENV.fetch('DB_USERNAME') %>
+  password: <%= ENV.fetch('DB_PASSWORD') %>
+  host: <%= ENV.fetch('DB_HOST', 'localhost') %>
+
+# Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
+# for a full overview on how database connection configuration can be specified.
+
+production:
+  <<: *default
+  database: exmachina_production
+  username: <%= ENV.fetch('DB_USERNAME') %>
+  password: <%= ENV["DB_PASSWORD"] %>
+  host: <%= ENV.fetch('DB_HOST') %>
