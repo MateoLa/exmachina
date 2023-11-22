@@ -1,5 +1,11 @@
 module Spree::Payment::ProcessingDecorator
-   
+
+  def process!
+    # payment_method&.auto_capture?
+    byebug
+    super
+  end
+
   def capture!(amount = nil)
     byebug
     super
@@ -10,8 +16,6 @@ module Spree::Payment::ProcessingDecorator
     byebug
     super
   end
-
-
 end
   
 Spree::Payment::Processing.prepend(Spree::Payment::ProcessingDecorator)
