@@ -4,8 +4,7 @@ Spree 3.7 Testing <br>
 (2 steps approval checkout) <br> 
 Sponsorized by Cata Laiño.
 
-<img
-  src="app/assets/images/C-deFuego-3.jpg" style="display: inline-block; margin: 0 auto; width: 100px">
+<img src="app/assets/images/C-deFuego-3.jpg" style="display: inline-block; margin: 0 auto; width: 100px">
 
 ## Installation
 
@@ -64,6 +63,8 @@ UnionPay	                6200000000000005
 UnionPay (debit)	        6200000000000047
 UnionPay (19-digit card)	6205500000000000004
 ```
+
+An example of ActiveMerchant Stripe succesful response can be found [here](./stripe_success_response.md).
 
 ## Notes
 
