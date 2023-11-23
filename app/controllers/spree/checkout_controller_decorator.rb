@@ -1,9 +1,7 @@
 module Spree::CheckoutControllerDecorator
 
   def update
-    byebug if params[:state] == 'payment'
-    byebug if params[:state] == 'confirm'
-    byebug if params[:state] == 'complete'
+    byebug if ['payment', 'confirm', 'complete'].include? params[:state]
     super
   end
 end
