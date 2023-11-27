@@ -8,7 +8,6 @@
 #       Instead you must either set a new value or remove entry, clear cache, and remove database entry.
 
 Spree.config do |config|
-  config.coupon_codes_enabled = false
   config.always_include_confirm_step = true
 end
 
@@ -23,5 +22,6 @@ Spree.dependencies do |dependencies|
   # dependencies.cart_add_item_service = 'MyNewAwesomeService'
 end
 
+Spree::Frontend::Config[:coupon_codes_enabled] = false
 
 Spree.user_class = "Spree::User"

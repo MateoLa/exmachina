@@ -61,3 +61,5 @@ gem 'sidekiq', '~> 5.2.10'
 gem 'spree', '~> 3.7.14'
 gem 'spree_auth_devise', '~> 3.4'
 gem 'spree_gateway', '~> 3.4'
+
+# gem 'ci_uy'

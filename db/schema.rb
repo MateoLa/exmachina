@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_11_21_160582) do
+ActiveRecord::Schema.define(version: 2023_11_27_114500) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -359,7 +359,7 @@ ActiveRecord::Schema.define(version: 2023_11_21_160582) do
     t.decimal "shipment_total", precision: 10, scale: 2, default: "0.0", null: false
     t.decimal "additional_tax_total", precision: 10, scale: 2, default: "0.0"
     t.decimal "promo_total", precision: 10, scale: 2, default: "0.0"
-    t.string "channel", default: "spree"
+    t.string "channel", default: "Exmachina Mkt"
     t.decimal "included_tax_total", precision: 10, scale: 2, default: "0.0", null: false
     t.integer "item_count", default: 0
     t.integer "approver_id"

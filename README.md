@@ -31,7 +31,7 @@ docker-compose exec app rake spree_sample:load
 
 ## Payments Tests
 
-Valid Cards for Bogus.
+Test Cards for Bogus.
 
 ```ruby
 TEST_VISA = ['4111111111111111', '4012888888881881', '4222222222222']
@@ -40,25 +40,25 @@ TEST_AMEX = ['378282246310005', '371449635398431', '378734493671000', '340000000
 TEST_DISC = ['6011000000000004', '6011111111111117', '6011000990139424']
 ```
 
-Stripe Test Cards by Brand. <br>
+Test Cards for Stripe. <br>
 Test this cards using any 3 digits	CVC and any future date
 
 ```ruby
-Visa	        4242424242424242
-Visa (debit)	4000056655665556
-Mastercard	          5555555555554444
+Visa	                4242424242424242
+Visa (debit)	        4000056655665556
+Mastercard	            5555555555554444
 Mastercard (2-series)	2223003122003222
-Mastercard (debit)	  5200828282828210
+Mastercard (debit)	    5200828282828210
 Mastercard (prepaid)	5105105105105100
-American Express	378282246310005
-American Express	371449635398431
-Discover	        6011111111111117
-Discover	        6011000990139424	
-Discover (debit)	6011981111111113
+American Express	  378282246310005
+American Express	  371449635398431
+Discover	          6011111111111117
+Discover	          6011000990139424	
+Discover (debit)	  6011981111111113
 Diners Club	                3056930009020004
 Diners Club (14-digit card)	36227206271667
-BCcard and DinaCard	 6555900000604105
-JCB	 3566002020360505
+BCcard and DinaCard	        6555900000604105
+JCB	                        3566002020360505
 UnionPay	                6200000000000005
 UnionPay (debit)	        6200000000000047
 UnionPay (19-digit card)	6205500000000000004
