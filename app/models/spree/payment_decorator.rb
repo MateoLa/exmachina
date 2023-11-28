@@ -11,6 +11,12 @@ module Spree::PaymentDecorator
     super
   end
 
+  # Actions are purchase or authorize.
+  def gateway_action(source, action, success_state)
+    byebug
+    super
+  end
+
   def handle_response(response, success_state, failure_state)
     byebug
     super
