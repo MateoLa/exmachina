@@ -62,4 +62,5 @@ gem 'spree', '~> 3.7.14'
 gem 'spree_auth_devise', '~> 3.4'
 gem 'spree_gateway', '~> 3.4'
 
+gem 'activemerchant', '~> 1.67'
 # gem 'ci_uy'

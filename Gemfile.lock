@@ -420,6 +420,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemerchant (~> 1.67)
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)
